@@ -28,7 +28,7 @@ async def main(message):
 
     if text.lower().startswith("بررسی "):
         if user_id not in captcha_data:
-            await message.reply("❗️اول با دستور «کپچا» یک تصویر جدید بگیر.")
+            await message.reply("اول با دستور «کپچا» یک تصویر جدید بگیر.")
             return
         code = text.split()[1]
         captcha_id = captcha_data[user_id]
